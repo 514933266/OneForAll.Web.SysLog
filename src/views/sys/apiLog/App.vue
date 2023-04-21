@@ -1,5 +1,5 @@
 <template>
-  <div class="ofa-table-container">
+  <div class="ofa-container column">
     <el-card shadow="never">
       <div class="ofa-work-box">
         <span>
@@ -51,7 +51,6 @@
 
 <script>
 import API from '../../../apis/sysLog-api'
-import SearchInput from '../_components/SearchInput'
 import {
   API_LOG,
   API_LOG_FORM
@@ -127,9 +126,6 @@ export default {
   },
   created () {
     this.init()
-  },
-  components: {
-    SearchInput
   }
 }
 </script>
