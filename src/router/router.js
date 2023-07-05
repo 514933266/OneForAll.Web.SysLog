@@ -3,7 +3,7 @@
 var childRoutes = []
 var files = require.context('../views', true, /.vue$/i)
 files.keys().forEach(key => {
-  if (key.match(/(components|login|index)\//i)) return
+  if (key.match(/(components)\//i)) return
   const route = createRoute(key)
   if (route) childRoutes.push(route)
 })
